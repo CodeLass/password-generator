@@ -18,6 +18,7 @@ let password1El = document.getElementById("password1-el")
 let password2El = document.getElementById("password2-el")
 let noNumbersEl = document.getElementById("noNumbers-el")
 let noSymbolsEl = document.getElementById("noSymbols-el")
+let copyEl = document.getElementById("copy-el")
 
 function setPasswords() {
     password1El.textContent = getPassword()
@@ -56,6 +57,7 @@ let generateBtn = document.getElementById("btn-generate");
 
 generateBtn.addEventListener("click", function () {
     setPasswords()
+    copyEl.textContent="Click password to copy to clipboard"
 })
 
 password1El.addEventListener("click", function () {
