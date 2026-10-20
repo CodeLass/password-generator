@@ -102,3 +102,6 @@ button {
     align-items: center;
     color: #10B981
 }
+ p {
+     display: block;
+ }
